@@ -12,6 +12,9 @@ public class Main {
             System.out.println(e.getMessage());
         }
     }
+    private static String removeSpecialChars(String word) {
+        return word.replaceAll("[^a-zA-Z0-9]", "");
+    }
 
     public static void findDuplicates(String text) throws Exception {
         String[] sentences = text.split("\\.");
@@ -46,7 +49,5 @@ public class Main {
         }
     }
 
-    private static String removeSpecialChars(String word) {
-        return word.replaceAll("[^a-zA-Z0-9]", "");
-    }
+
 }
